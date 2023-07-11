@@ -24,3 +24,26 @@ drop if n == 1
 
 *we don't need index number
 drop n
+
+*Change the date format, to make the data we got from FRED in the same date format
+gen new_date = date(date, "MDY")
+format new_date %td
+format %tdDD/NN/CCYY new_date
+
+*Sort by new date format
+gsort +new_date
+
+*Drop the old date column
+drop date
+
+*...and rename the new date column to simply "date"
+rename new_date date
+
+*Change the order of columns
+order date gold
+
+*Change the format of price from US format with (.) as a decimal to the format with (,) as a decimal 
+destring gold, replace ignore(",")
+
+*Save as a new file "gold" and replace if we have the same file 
+save "C:\Users\Admin\Desktop\gold.dta", replace
