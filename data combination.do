@@ -60,3 +60,21 @@ format %tdDD/NN/CCYY new_date
 *Sort by date
 gsort +new_date
 
+*Rename the name of the column for money supply aggregate M1 and the date
+rename wm1ns m1
+rename new_date date
+
+*Change the order of columns
+order date m1
+
+*Save (and if needed replace) the file
+save "C:\Users\Admin\Desktop\m1.dta", replace
+
+//Import data the data for Bitcoin price in CSV file
+import delimited "C:\Users\Admin\Desktop\CBBTCUSD.csv", clear
+
+*Change the date format (as before)
+gen new_date = date(date, "YMD")
+drop date
+format new_date %td
+format %tdDD/NN/CCYY new_date
