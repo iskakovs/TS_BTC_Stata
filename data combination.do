@@ -78,3 +78,16 @@ gen new_date = date(date, "YMD")
 drop date
 format new_date %td
 format %tdDD/NN/CCYY new_date
+
+*Sort by date
+gsort +new_date
+
+*Rename the column for Bitcoin price and date
+rename cbbtcusd btc
+rename new_date date
+
+*Change the order of columns
+order date btc
+
+*Save (and if needed replace) the file
+save "C:\Users\Admin\Desktop\btc.dta", replace
