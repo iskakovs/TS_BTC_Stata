@@ -91,3 +91,21 @@ order date btc
 
 *Save (and if needed replace) the file
 save "C:\Users\Admin\Desktop\btc.dta", replace
+
+// Let's merge (or actually append) the files for Bitcoin price and Gold price by dates
+joinby date using "C:\Users\Admin\Desktop\gold.dta"
+
+*Save the new file btc-gold
+save "C:\Users\Admin\Desktop\btc-gold.dta", replace
+
+// Now let's take the last file we got (btc-gold) and merge it in the same way with the file where we have money supply
+use "C:\Users\Admin\Desktop\btc-gold.dta", clear
+joinby date using "C:\Users\Admin\Desktop\m1.dta"
+
+*Save the new file as "data" - we got the final dataset we will work with
+save "C:\Users\Admin\Desktop\data.dta", replace
+
+*If we need to describe it
+describe btc gold m1
+inspect btc gold m1
+summarize btc gold m1
