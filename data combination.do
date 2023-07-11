@@ -47,3 +47,16 @@ destring gold, replace ignore(",")
 
 *Save as a new file "gold" and replace if we have the same file 
 save "C:\Users\Admin\Desktop\gold.dta", replace
+
+//Import data the data for money supply M1 aggregate in CSV file
+import delimited "C:\Users\Admin\Desktop\WM1NS.csv", clear
+
+*Change the date format (here we follow the same procedure as before)
+gen new_date = date(date, "YMD")
+drop date
+format new_date %td
+format %tdDD/NN/CCYY new_date
+
+*Sort by date
+gsort +new_date
+
