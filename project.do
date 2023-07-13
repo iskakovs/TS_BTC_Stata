@@ -53,3 +53,9 @@ label var m1 "Aggregate M1 (bln.USD)"
 label var lbtc "Log BTC Price"
 label var lgold "Log Gold Price"
 label var lm1 "Log Aggregate M1"
+
+* Let's make a graph of the variables
+** For BTC
+twoway (tsline lbtc)
+** For gold
+twoway (tsline lgold)
