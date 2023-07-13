@@ -26,3 +26,8 @@ codebook
 use "C:\Users\Admin\Desktop\data.dta", clear
 
 bro
+
+* Install the package for Latex conversion
+ssc install estout, replace
+ssc install outreg2
+ssc install asdoc
