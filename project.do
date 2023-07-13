@@ -67,3 +67,11 @@ scatter lbtc date || lfit lbtc date, saving(plot_lbtc)
 scatter btc date || lfit btc date, saving(plot_btc)
 ** Combine the graphs
 graph combine "plot_lbtc" "plot_btc"
+
+* Let's make a graph of the variables with trendlines for gold
+** For Log gold
+scatter lgold date || lfit lgold date, saving(plot_lgold)
+** For gold
+scatter gold date || lfit gold date, saving(plot_gold)
+** Combine the graphs
+graph combine "plot_lgold" "plot_gold"
