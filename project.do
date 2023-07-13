@@ -81,3 +81,8 @@ graph combine "plot_btc" "plot_gold"
 
 ** Combine the graphs of the logged variables
 graph combine "plot_lbtc" "plot_lgold"
+
+*Let's make some visualizations of our variables
+tsline lbtc lgold
+scatter lbtc lgold || lfit lbtc lgold
+** The graph shows the negative correlation between the price of the gold and Bitcoin. However, we need to check our results using the tests. 
