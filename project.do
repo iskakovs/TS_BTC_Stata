@@ -45,3 +45,11 @@ tsset t, weekly
 generate lbtc = log(btc)
 generate lm1 = log(m1)
 generate lgold = log(gold)
+
+*Let's set labels for variables
+label var btc "Bitcoin price (USD)"
+label var gold "Gold price (USD)"
+label var m1 "Aggregate M1 (bln.USD)"
+label var lbtc "Log BTC Price"
+label var lgold "Log Gold Price"
+label var lm1 "Log Aggregate M1"
