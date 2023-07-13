@@ -90,7 +90,10 @@ scatter lbtc lgold || lfit lbtc lgold
 *For the begining, let's make a simple OLS regression
 asdoc reg lgold lbtc 
 
-
+*Let's plot the ACF and PACF functions
+** For BTC price
+ac lbtc
+pac lbtc
 
 
 
