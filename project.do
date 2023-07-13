@@ -31,3 +31,12 @@ bro
 ssc install estout, replace
 ssc install outreg2
 ssc install asdoc
+
+* Let's generate the new variable "n" as a time period number
+generate t = _n
+
+* Set dataset as a timeseries 
+tsset t, weekly
+
+*Set dataset as a time series of weekly values
+*tsset date, weekly
