@@ -95,6 +95,11 @@ asdoc reg lgold lbtc
 ac lbtc
 pac lbtc
 
+** For Gold price
+ac lgold
+pac lgold
 
+* We again run the regression and to check for structural breaks
+regress lgold lbtc
 
 
