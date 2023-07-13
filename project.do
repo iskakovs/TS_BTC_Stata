@@ -59,3 +59,11 @@ label var lm1 "Log Aggregate M1"
 twoway (tsline lbtc)
 ** For gold
 twoway (tsline lgold)
+
+* Let's make a graph of the variables with trendlines for BTC
+** For Log BTC
+scatter lbtc date || lfit lbtc date, saving(plot_lbtc)
+** For BTC
+scatter btc date || lfit btc date, saving(plot_btc)
+** Combine the graphs
+graph combine "plot_lbtc" "plot_btc"
