@@ -40,3 +40,8 @@ tsset t, weekly
 
 *Set dataset as a time series of weekly values
 *tsset date, weekly
+
+*Let's take to log of each variable to normalize it, we will also need the log for further % change interpretation
+generate lbtc = log(btc)
+generate lm1 = log(m1)
+generate lgold = log(gold)
