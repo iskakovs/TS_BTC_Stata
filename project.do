@@ -75,3 +75,9 @@ scatter lgold date || lfit lgold date, saving(plot_lgold)
 scatter gold date || lfit gold date, saving(plot_gold)
 ** Combine the graphs
 graph combine "plot_lgold" "plot_gold"
+
+** Combine the graphs of the raw variables
+graph combine "plot_btc" "plot_gold"
+
+** Combine the graphs of the logged variables
+graph combine "plot_lbtc" "plot_lgold"
