@@ -86,3 +86,12 @@ graph combine "plot_lbtc" "plot_lgold"
 tsline lbtc lgold
 scatter lbtc lgold || lfit lbtc lgold
 ** The graph shows the negative correlation between the price of the gold and Bitcoin. However, we need to check our results using the tests. 
+
+*For the begining, let's make a simple OLS regression
+asdoc reg lgold lbtc 
+
+
+
+
+
+
