@@ -1,4 +1,4 @@
-* Date: December 2022
+* Date: 
 * Paper: 
 *
 * This code is written for the analysis of the relationship (cointegration, and causality) between gold price and Bitcoin price
