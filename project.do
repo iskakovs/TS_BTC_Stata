@@ -13,7 +13,6 @@
 * Key varaibles: - Gold Price
 *				 - Bitcoin Price
 *
-*
 
 clear
 clear matrix
@@ -22,3 +21,8 @@ set mem 500m
 #delimit;
 
 codebook
+
+// Import the data
+use "C:\Users\Admin\Desktop\data.dta", clear
+
+bro
