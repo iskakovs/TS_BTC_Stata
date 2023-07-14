@@ -126,6 +126,10 @@ dfuller lm1
 asdoc dfgls lbtc
 asdoc dfgls lgold
 
+* Taking first difference of each TS
+asdoc dfuller d.lgold
+asdoc dfuller d.lbtc
+*We see that each TS becomes stationary - p value = 0.0000.
 
 
 
