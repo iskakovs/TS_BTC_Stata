@@ -111,3 +111,15 @@ tsline wald, title("Wald test statistics")
 * Plot the scatter plot to check for relationship
 graph twoway (lfitci lgold lbtc) (scatter lgold lbtc)
 * seems like we have negative relationship between varaibles, so it looks like people shift from gold to BTC and assets behave like absolute substitutes 
+
+regress lgold lbtc
+
+* ADF test for stationarity
+asdoc dfuller lbtc
+asdoc dfuller lgold
+
+
+
+
+
+
