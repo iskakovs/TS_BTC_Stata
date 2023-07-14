@@ -105,3 +105,9 @@ regress lgold lbtc
 * Now let's check for structural breaks
 estat sbsingle, breakvars(lbtc) //generate(wald)
 outreg2 using myfile2.doc, replace
+
+tsline wald, title("Wald test statistics")
+
+* Plot the scatter plot to check for relationship
+graph twoway (lfitci lgold lbtc) (scatter lgold lbtc)
+* seems like we have negative relationship between varaibles, so it looks like people shift from gold to BTC and assets behave like absolute substitutes 
