@@ -122,6 +122,10 @@ asdoc dfuller lgold
 dfuller lm1
 *We have non stationary data series. So we apply first differencing
 
+* We can alternatively run DF-GLS test
+asdoc dfgls lbtc
+asdoc dfgls lgold
+
 
 
 
