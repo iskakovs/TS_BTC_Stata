@@ -142,5 +142,12 @@ line d.lgold d.lbtc t, legend(size(medsmall))
 regress d.lgold d.lbtc d.lm1
 asdoc regress d.lgold d.lbtc
 
+* Durbin-Watson d-statistic
+estat dwatson
+** d-statistic is .3957583, and R^2 is .2488. So d-statistic > R^2 => time series are stationary and we have a case of I(1)-I(1). There is no spurious regression
 
+** Lag selection
+* For gold and BTC price
+asdoc varsoc lgold lbtc
+* First lag seems to be perfect
 
