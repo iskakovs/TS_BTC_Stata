@@ -11,7 +11,7 @@
 * output: data.dta
 *
 * Key varaibles: - Gold Price
-*				 - Bitcoin Price
+*	- Bitcoin Price
 *
 
 clear
@@ -102,4 +102,6 @@ pac lgold
 * We again run the regression and to check for structural breaks
 regress lgold lbtc
 
-
+* Now let's check for structural breaks
+estat sbsingle, breakvars(lbtc) //generate(wald)
+outreg2 using myfile2.doc, replace
