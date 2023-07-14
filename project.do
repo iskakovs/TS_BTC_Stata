@@ -11,7 +11,7 @@
 * output: data.dta
 *
 * Key varaibles: - Gold Price
-*	- Bitcoin Price
+*	   - Bitcoin Price
 *
 
 clear
