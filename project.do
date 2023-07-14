@@ -118,7 +118,9 @@ regress lgold lbtc
 asdoc dfuller lbtc
 asdoc dfuller lgold
 
-
+*We are not reqiured, but let's check the stationarity of the money supply series too
+dfuller lm1
+*We have non stationary data series. So we apply first differencing
 
 
 
