@@ -135,6 +135,8 @@ asdoc dfuller d.lbtc
 asdoc dfgls d.lbtc
 asdoc dfgls d.lgold
 
+* Plotting the graph of each variable
+line d.lgold d.lbtc t, legend(size(medsmall))
 
 
 
