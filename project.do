@@ -138,5 +138,9 @@ asdoc dfgls d.lgold
 * Plotting the graph of each variable
 line d.lgold d.lbtc t, legend(size(medsmall))
 
+* Let's make a simple OLS regression for our differenced and logged variables
+regress d.lgold d.lbtc d.lm1
+asdoc regress d.lgold d.lbtc
+
 
 
