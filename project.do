@@ -187,3 +187,6 @@ asdoc vargranger
 * H0: X does not Granger Cause Y, 
 * H1: X Granger Cause Y
 * we get p values > 0.05 that means that X does not Granger cause Y (i.e. our variables does not effect each other at 5% significance level)  
+
+*Checking for VAR model stability
+varstable
