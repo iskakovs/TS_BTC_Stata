@@ -194,3 +194,9 @@ varstable, graph
 *IRFs
 irf create irf2, set(irf_gb2)
 irf graph oirf, impulse(lgold) response(lbtc)
+
+irf create irf3, set(irf_bg)
+irf graph oirf, impulse(lbtc) response(lgold)
+
+** We can also try to check for IRF, that is we can check the effect of one unit shock in X on Y. But since we don't have relationship between these varaibles, I'm not sure we need to do it.
+// (for IRF we need to apply Cholesky decomposition approach)
