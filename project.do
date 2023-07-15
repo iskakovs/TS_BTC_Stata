@@ -190,3 +190,7 @@ asdoc vargranger
 
 *Checking for VAR model stability
 varstable
+varstable, graph
+*IRFs
+irf create irf2, set(irf_gb2)
+irf graph oirf, impulse(lgold) response(lbtc)
