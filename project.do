@@ -166,3 +166,7 @@ var lgold lbtc, lags(1)
 
 * Trying to set up the model with one exogeneous variable Money supply
 asdoc var lgold lbtc, lags (1) dfk exog(lm1)
+
+*Performing Lagrange-multiplier test
+varlmar
+* We canot reject the null hypothesis - so there is no autocorrelation at lag 1
