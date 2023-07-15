@@ -177,3 +177,7 @@ asdoc varnorm
 
 *Plotting error terms to see it
 line error t, legend(size(medsmall))
+
+*Check if our error terms behave like a WN
+wntestq error
+* no - we don't have WN process
