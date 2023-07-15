@@ -175,3 +175,5 @@ varlmar
 asdoc varnorm
 * our error terms are normally distributed
 
+*Plotting error terms to see it
+line error t, legend(size(medsmall))
