@@ -157,3 +157,7 @@ asdoc regress lgold lbtc, robust
 *Predicting error terms
 predict error, resid
 
+*Applying ADF test to error terms
+dfuller error
+* our p value is <0.05, so our error terms are stationary and we have cointegration
+
