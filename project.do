@@ -170,3 +170,8 @@ asdoc var lgold lbtc, lags (1) dfk exog(lm1)
 *Performing Lagrange-multiplier test
 varlmar
 * We canot reject the null hypothesis - so there is no autocorrelation at lag 1
+
+*Checking for normality of the error terms
+asdoc varnorm
+* our error terms are normally distributed
+
