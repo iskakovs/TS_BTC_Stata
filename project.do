@@ -163,3 +163,6 @@ dfuller error
 
 *So we need VAR(1) model with one lag and two variables
 var lgold lbtc, lags(1)
+
+* Trying to set up the model with one exogeneous variable Money supply
+asdoc var lgold lbtc, lags (1) dfk exog(lm1)
