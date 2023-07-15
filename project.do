@@ -151,3 +151,9 @@ estat dwatson
 asdoc varsoc lgold lbtc
 * First lag seems to be perfect
 
+* Let's make a simple OLS again
+asdoc regress lgold lbtc, robust
+
+*Predicting error terms
+predict error, resid
+
