@@ -161,3 +161,5 @@ predict error, resid
 dfuller error
 * our p value is <0.05, so our error terms are stationary and we have cointegration
 
+*So we need VAR(1) model with one lag and two variables
+var lgold lbtc, lags(1)
